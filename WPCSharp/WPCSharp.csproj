@@ -5,4 +5,18 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="DesignPrinciples\**" />
+    <Compile Remove="SOLID\**" />
+    <EmbeddedResource Remove="DesignPrinciples\**" />
+    <EmbeddedResource Remove="SOLID\**" />
+    <None Remove="DesignPrinciples\**" />
+    <None Remove="SOLID\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="DesignPrinciples\PaymentAccount.cs" />
+    <Compile Include="DesignPrinciples\PaymentService.cs" />
+  </ItemGroup>
+
 </Project>
