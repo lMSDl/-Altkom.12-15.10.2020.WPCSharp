@@ -19,6 +19,12 @@
     <Compile Include="DesignPrinciples\CustomersService.cs" />
     <Compile Include="DesignPrinciples\PaymentAccount.cs" />
     <Compile Include="DesignPrinciples\PaymentService.cs" />
+    <Compile Include="SOLID\III_LS_1.cs" />
+    <Compile Include="SOLID\III_LS_2.cs" />
+    <Compile Include="SOLID\II_OCP.cs" />
+    <Compile Include="SOLID\IV_ISP.cs" />
+    <Compile Include="SOLID\I_SRP.cs" />
+    <Compile Include="SOLID\V_DIP.cs" />
   </ItemGroup>
 
 </Project>
