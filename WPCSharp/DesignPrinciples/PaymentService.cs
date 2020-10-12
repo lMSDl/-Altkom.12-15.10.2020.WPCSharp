@@ -14,6 +14,11 @@ namespace DesignPrinciples
             return Customers.Remove(account);
         }
 
+        public PaymentAccount FindById(int id)
+        {
+            return Customers.SingleOrDefault(x => x.Id == id);
+        }
+
         public PaymentAccount Find(float debit)
         {
             return Customers.SingleOrDefault(x => x.AllowedDebit == debit);
@@ -21,13 +26,13 @@ namespace DesignPrinciples
 
         public bool Charge(int customerId, float amount)
         {
-            var customer = Customers.SingleOrDefault(x => x.Id == customerId);
+            var customer = FindById(customerId);
             if (customer == null)
             {
                 return false;
             }
 
-            if (customer.Income - customer.Outcome + customer.AllowedDebit < amount)
+            if (GetBalance(customerId) + customer.AllowedDebit < amount)
             {
                 return false;
             }
@@ -38,7 +43,7 @@ namespace DesignPrinciples
 
         public void Fund(int customerId, float amount)
         {
-            var customer = Customers.Where(x => x.Id == customerId).SingleOrDefault();
+            var customer = FindById(customerId);
             if (customer == null)
             {
                 return;
@@ -47,9 +52,9 @@ namespace DesignPrinciples
             customer.Income += amount;
         }
 
-        public float? GetBalance(int param1)
+        public float? GetBalance(int id)
         {
-            var customer = Customers.Where(x => x.Id == param1).SingleOrDefault();
+            var customer = FindById(id);
             return customer?.Income - customer?.Outcome;
         }
     }
