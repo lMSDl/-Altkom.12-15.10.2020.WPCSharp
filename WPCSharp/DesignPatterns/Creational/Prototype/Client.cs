@@ -17,12 +17,23 @@ namespace DesignPatterns.Creational.Prototype
             };
 
             var p2 = (Person)p1.Clone();
+            p2.StartEdit();
+
             p2.Name = "Ewa Ewowska";
             p2.Address.Clear();
-
-            Display(p1);
-        
             Display(p2);
+
+            p2.CancelEdit();
+            Display(p2);
+
+            p2.StartEdit();
+            p2.Name = "Ewa Ewowska";
+            p2.FinishEdit();
+            p2.CancelEdit();
+            Display(p2);
+
+            
+        
         }
 
         public static void Display(Person person)

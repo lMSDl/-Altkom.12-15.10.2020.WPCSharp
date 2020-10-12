@@ -36,6 +36,7 @@
     <Compile Include="DesignPatterns\Creational\FactoryMethod\ElevatorUp.cs" />
     <Compile Include="DesignPatterns\Creational\FactoryMethod\IEvelatorOperation.cs" />
     <Compile Include="DesignPatterns\Creational\Prototype\Client.cs" />
+    <Compile Include="DesignPatterns\Creational\Prototype\EditableObject.cs" />
     <Compile Include="DesignPatterns\Creational\Prototype\IdInfo.cs" />
     <Compile Include="DesignPatterns\Creational\Prototype\Person.cs" />
     <Compile Include="DesignPrinciples\Customer.cs" />

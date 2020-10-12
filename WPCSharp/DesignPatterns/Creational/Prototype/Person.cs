@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace DesignPatterns.Creational.Prototype
 {
-    public class Person : ICloneable
+    public class Person : EditableObject<Person>
     {
         public int Age { get; set; }
         public string Name { get; set; }
@@ -12,7 +12,7 @@ namespace DesignPatterns.Creational.Prototype
         public IdInfo IdInfo { get; set; }
         private DateTime _creationDate = DateTime.Now;
 
-        public object Clone()
+        public override object Clone()
         {
             var clone = (Person)MemberwiseClone();
             clone.Address = Address.ToList();
@@ -24,6 +24,15 @@ namespace DesignPatterns.Creational.Prototype
         public object ShallowClone()
         {
             return MemberwiseClone();
+        }
+
+        protected override void Restore(Person clone)
+        {
+            Age = clone.Age;
+            Name = clone.Name;
+            Address = clone.Address;
+            IdInfo = clone.IdInfo;
+            _creationDate = clone._creationDate;
         }
     }
 }
