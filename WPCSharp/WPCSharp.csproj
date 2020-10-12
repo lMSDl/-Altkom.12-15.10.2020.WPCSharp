@@ -15,6 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Include="DesignPrinciples\Customer.cs" />
+    <Compile Include="DesignPrinciples\CustomersService.cs" />
     <Compile Include="DesignPrinciples\PaymentAccount.cs" />
     <Compile Include="DesignPrinciples\PaymentService.cs" />
   </ItemGroup>
