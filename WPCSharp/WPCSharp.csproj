@@ -18,6 +18,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Include="DesignPatterns\Creational\AbstractFactory\Client.cs" />
+    <Compile Include="DesignPatterns\Creational\AbstractFactory\Factories.cs" />
+    <Compile Include="DesignPatterns\Creational\AbstractFactory\Interfaces.cs" />
+    <Compile Include="DesignPatterns\Creational\AbstractFactory\Order.cs" />
+    <Compile Include="DesignPatterns\Creational\AbstractFactory\Products.cs" />
     <Compile Include="DesignPatterns\Creational\Builder\Client.cs" />
     <Compile Include="DesignPatterns\Creational\Builder\IVehicleBuilder.cs" />
     <Compile Include="DesignPatterns\Creational\Builder\Vehicle.cs" />
