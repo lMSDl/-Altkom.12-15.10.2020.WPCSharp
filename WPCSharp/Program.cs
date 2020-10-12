@@ -8,14 +8,7 @@ namespace WPCSharp
     {
         static void Main(string[] args)
         {
-            var a = 3;
-            var b = 5;
-
-            Square shape = new Rectangle()
-            { A = a, B = b };
-
-            Console.WriteLine($"{a}*{b} = {shape.Area}");
-
+            DesignPatterns.Creational.Builder.Client.Execute();
             Console.ReadLine();
         }
     }

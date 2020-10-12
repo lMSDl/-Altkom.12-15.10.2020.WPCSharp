@@ -6,15 +6,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="DesignPatterns\**" />
     <Compile Remove="DesignPrinciples\**" />
     <Compile Remove="SOLID\**" />
+    <EmbeddedResource Remove="DesignPatterns\**" />
     <EmbeddedResource Remove="DesignPrinciples\**" />
     <EmbeddedResource Remove="SOLID\**" />
+    <None Remove="DesignPatterns\**" />
     <None Remove="DesignPrinciples\**" />
     <None Remove="SOLID\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Include="DesignPatterns\Creational\Builder\Client.cs" />
+    <Compile Include="DesignPatterns\Creational\Builder\IVehicleBuilder.cs" />
+    <Compile Include="DesignPatterns\Creational\Builder\Vehicle.cs" />
+    <Compile Include="DesignPatterns\Creational\Builder\VehicleBuilder.cs" />
+    <Compile Include="DesignPatterns\Creational\Builder\VehicleInfoBuilder.cs" />
     <Compile Include="DesignPrinciples\Customer.cs" />
     <Compile Include="DesignPrinciples\CustomersService.cs" />
     <Compile Include="DesignPrinciples\PaymentAccount.cs" />
@@ -25,6 +33,10 @@
     <Compile Include="SOLID\IV_ISP.cs" />
     <Compile Include="SOLID\I_SRP.cs" />
     <Compile Include="SOLID\V_DIP.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
 </Project>
