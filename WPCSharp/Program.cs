@@ -8,7 +8,7 @@ namespace WPCSharp
     {
         static void Main(string[] args)
         {
-            DesignPatterns.Creational.Singleton.Client.Execute();
+            DesignPatterns.Creational.ObjectPool.Client.Execute();
             Console.ReadLine();
         }
     }
