@@ -8,7 +8,7 @@ namespace WPCSharp
     {
         static void Main(string[] args)
         {
-            DesignPatterns.Structural.Bridge.III.Client.Execute();
+            DesignPatterns.Structural.Composite.Client.Execute();
             Console.ReadLine();
         }
     }
