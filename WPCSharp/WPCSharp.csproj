@@ -95,6 +95,10 @@
     <Compile Include="DesignPatterns\Structural\Decorator\Notification.cs" />
     <Compile Include="DesignPatterns\Structural\Decorator\EmailNotification.cs" />
     <Compile Include="DesignPatterns\Structural\Decorator\SmsNotification.cs" />
+    <Compile Include="DesignPatterns\Structural\Proxy\Client.cs" />
+    <Compile Include="DesignPatterns\Structural\Proxy\Database.cs" />
+    <Compile Include="DesignPatterns\Structural\Proxy\DatabaseProxy.cs" />
+    <Compile Include="DesignPatterns\Structural\Proxy\IDatabase.cs" />
     <Compile Include="DesignPrinciples\Customer.cs" />
     <Compile Include="DesignPrinciples\CustomersService.cs" />
     <Compile Include="DesignPrinciples\PaymentAccount.cs" />
