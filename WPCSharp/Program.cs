@@ -8,7 +8,7 @@ namespace WPCSharp
     {
         static void Main(string[] args)
         {
-            DesignPatterns.Structural.Proxy.Client.Execute();
+            DesignPatterns.Creational.Builder.Client.Execute();
             Console.ReadLine();
         }
     }
