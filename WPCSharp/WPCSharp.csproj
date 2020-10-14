@@ -55,6 +55,11 @@
     <Compile Include="DesignPatterns\Behavioral\Memento\IRestorable.cs" />
     <Compile Include="DesignPatterns\Behavioral\Memento\Memento.cs" />
     <Compile Include="DesignPatterns\Behavioral\Memento\Person.cs" />
+    <Compile Include="DesignPatterns\Behavioral\NullObject\Client.cs" />
+    <Compile Include="DesignPatterns\Behavioral\NullObject\ConsoleOutput.cs" />
+    <Compile Include="DesignPatterns\Behavioral\NullObject\NullOutput.cs" />
+    <Compile Include="DesignPatterns\Behavioral\NullObject\DebugOutput.cs" />
+    <Compile Include="DesignPatterns\Behavioral\NullObject\Output.cs" />
     <Compile Include="DesignPatterns\Behavioral\Observer\Client.cs" />
     <Compile Include="DesignPatterns\Behavioral\Observer\SubsciberB.cs" />
     <Compile Include="DesignPatterns\Behavioral\Observer\SubsciberA.cs" />
