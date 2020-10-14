@@ -8,7 +8,7 @@ namespace WPCSharp
     {
         static void Main(string[] args)
         {
-            DesignPatterns.Behavioral.Command.Client.Execute();
+            DesignPatterns.Behavioral.Iterator.Client.Execute();
             Console.ReadLine();
         }
     }

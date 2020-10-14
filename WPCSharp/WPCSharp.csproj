@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <LangVersion>7.1</LangVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -39,6 +40,9 @@
     <Compile Include="DesignPatterns\Behavioral\Command\Command.cs" />
     <Compile Include="DesignPatterns\Behavioral\Command\RemoveCommand.cs" />
     <Compile Include="DesignPatterns\Behavioral\Command\PlantCommand.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Iterator\Buffer.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Iterator\BufferIterator.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Iterator\Client.cs" />
     <Compile Include="DesignPatterns\Behavioral\TemplateMethod\Client.cs" />
     <Compile Include="DesignPatterns\Behavioral\TemplateMethod\DatabaseLogger.cs" />
     <Compile Include="DesignPatterns\Behavioral\TemplateMethod\DatabaseService.cs" />
@@ -156,6 +160,8 @@
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.Reactive" Version="4.4.1" />
+    <PackageReference Include="System.Reactive.Linq" Version="4.4.1" />
   </ItemGroup>
 
 </Project>
