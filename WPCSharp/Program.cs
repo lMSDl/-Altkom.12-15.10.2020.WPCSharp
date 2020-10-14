@@ -8,7 +8,7 @@ namespace WPCSharp
     {
         static void Main(string[] args)
         {
-            DesignPatterns.Behavioral.Strategy.Client.Execute();
+            DesignPatterns.Behavioral.Visitor.II.Client.Execute();
             Console.ReadLine();
         }
     }
