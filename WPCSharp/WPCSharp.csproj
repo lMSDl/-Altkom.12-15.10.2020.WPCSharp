@@ -55,6 +55,12 @@
     <Compile Include="DesignPatterns\Behavioral\Memento\IRestorable.cs" />
     <Compile Include="DesignPatterns\Behavioral\Memento\Memento.cs" />
     <Compile Include="DesignPatterns\Behavioral\Memento\Person.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Observer\Client.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Observer\SubsciberB.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Observer\SubsciberA.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Observer\Publisher.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Observer\Subsciber.cs" />
+    <Compile Include="DesignPatterns\Behavioral\Observer\Unsubscribe.cs" />
     <Compile Include="DesignPatterns\Behavioral\TemplateMethod\Client.cs" />
     <Compile Include="DesignPatterns\Behavioral\TemplateMethod\DatabaseLogger.cs" />
     <Compile Include="DesignPatterns\Behavioral\TemplateMethod\DatabaseService.cs" />
