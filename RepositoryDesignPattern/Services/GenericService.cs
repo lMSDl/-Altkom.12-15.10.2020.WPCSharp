@@ -35,7 +35,7 @@ namespace RepositoryDesignPattern.Services
             }
         }
 
-        public TId Create(T entity)
+        public virtual TId Create(T entity)
         {
             using (var context = new Context())
             {
@@ -45,7 +45,7 @@ namespace RepositoryDesignPattern.Services
             }
         }
 
-        public void Update(TId id, T entity)
+        public virtual void Update(TId id, T entity)
         {
             using (var context = new Context())
             {
